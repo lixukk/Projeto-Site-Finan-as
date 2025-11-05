@@ -17,7 +17,7 @@ export default function Login(){
     }catch(err){ setError(err.message); }
   }
 
-  // if already logged, redirect to dashboard
+  // Se logado, redirecionar pro dashboard
   React.useEffect(() => {
     try{
       const u = JSON.parse(localStorage.getItem('mf_user'));

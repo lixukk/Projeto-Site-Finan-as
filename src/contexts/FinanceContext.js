@@ -18,7 +18,7 @@ export function FinanceProvider({ children }) {
   function addTransaction({ type = 'expense', amount = 0, date = new Date().toISOString(), category = 'Geral', accountId = accounts[0]?.id || 'wallet', note = '' }) {
     const t = { id: uuidv4(), type, amount: Number(amount), date, category, accountId, note };
     setTransactions(p => [t, ...p]);
-    // adjust account balance simple
+    // Ajustar saldo da conta
     setAccounts(p => p.map(a => a.id === accountId ? { ...a, balance: a.balance + (type === 'income' ? Number(amount) : -Number(amount)) } : a));
     return t;
   }
@@ -31,19 +31,19 @@ export function FinanceProvider({ children }) {
     setTransactions(p => p.filter(t => t.id !== id));
   }
 
-  // add a new account
+  // Adicionar conta
   function addAccount({ name, initialBalance = 0 }){
     const acc = { id: uuidv4(), name, balance: Number(initialBalance) };
     setAccounts(p => [acc, ...p]);
     return acc;
   }
 
-  // update account fields
+  // Atualizar campos da conta
   function updateAccount(id, patch){
     setAccounts(p => p.map(a => a.id === id ? { ...a, ...patch } : a));
   }
 
-  // set account balance directly (useful for manual edits)
+  // Setar o saldo da conta diretamente
   function setAccountBalance(id, newBalance){
     setAccounts(p => p.map(a => a.id === id ? { ...a, balance: Number(newBalance) } : a));
   }

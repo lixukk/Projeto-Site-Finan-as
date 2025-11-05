@@ -10,7 +10,7 @@ export function AuthProvider({ children }){
   useEffect(() => { try { localStorage.setItem('mf_user', JSON.stringify(user)); } catch {} }, [user]);
 
   function login({ cpf, name }){
-    // simple validation: CPF length (only digits)
+    // Validação CPF
     const normalized = String(cpf).replace(/\D/g, '');
     if(!normalized || normalized.length < 11) throw new Error('CPF inválido');
     const newUser = { cpf: normalized, name: name || null, createdAt: new Date().toISOString() };
