@@ -17,10 +17,19 @@ export default function Login(){
     }catch(err){ setError(err.message); }
   }
 
+  // if already logged, redirect to dashboard
+  React.useEffect(() => {
+    try{
+      const u = JSON.parse(localStorage.getItem('mf_user'));
+      if(u) nav('/');
+    }catch{}
+  }, [nav]);
+
   return (
-    <div className="container">
-      <h2>Entrar / Cadastrar</h2>
-      <form onSubmit={onSubmit} className="card" style={{display:'grid',gap:8}}>
+    <div className="login-wrapper">
+      <div className="login-card card">
+        <h2>Entrar / Cadastrar</h2>
+        <form onSubmit={onSubmit} className="" style={{display:'grid',gap:8}}>
         <div>
           <label>CPF (somente números):</label><br/>
           <input value={cpf} onChange={e=>setCpf(e.target.value)} placeholder="12345678901" />
@@ -33,7 +42,8 @@ export default function Login(){
         <div>
           <button type="submit">Entrar</button>
         </div>
-      </form>
+        </form>
+      </div>
     </div>
   );
 }

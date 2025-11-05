@@ -17,7 +17,7 @@ export default function TransactionForm(){
 
   return (
     <div className="container">
-      <h2>Adicionar Transação</h2>
+      <h2>Adicionar Transação 💳</h2>
       <form onSubmit={onSubmit} className="card" style={{display:'grid',gap:8}}>
         <div>
           <label>Tipo:</label>

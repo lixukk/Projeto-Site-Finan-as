@@ -9,7 +9,7 @@ export default function Dashboard(){
   return (
     <div className="container">
       <div className="header">
-        <h2>Dashboard</h2>
+        <h2>Dashboard 👤</h2>
       </div>
       <div style={{display:'grid',gridTemplateColumns:'1fr 1fr 1fr',gap:12}}>
         <div className="card">Receitas: R$ {totalIncome.toFixed(2)}</div>

@@ -1,0 +1,43 @@
+/* Global styles for Minhas Finanças */
+:root{
+  --bg: #f4f7fb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --danger: #ef4444;
+  --success: #10b981;
+  --text: #0f172a;
+}
+
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);margin:0}
+.container{max-width:1000px;margin:26px auto;padding:16px}
+.header{display:flex;justify-content:space-between;align-items:center;padding:10px 0}
+.header h1{margin:0;font-size:20px}
+
+nav a{color:var(--accent);text-decoration:none;margin-right:10px}
+nav a:hover{text-decoration:underline}
+
+.card{background:var(--card);padding:12px;border-radius:10px;box-shadow:0 4px 10px rgba(2,6,23,0.04);}
+
+button{background:var(--accent);color:white;border:none;padding:8px 12px;border-radius:6px;cursor:pointer}
+button:disabled{opacity:.6;cursor:not-allowed}
+
+input,select,textarea{padding:8px;border:1px solid #e6e9ef;border-radius:6px;width:100%}
+label{font-size:13px;color:var(--muted)}
+
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+.login-wrapper{min-height:80vh;display:flex;align-items:center;justify-content:center}
+.login-card{width:420px}
+
+.accounts-edit input[type=number]{width:160px;margin-left:8px}
+
+.small{font-size:13px;color:var(--muted)}
+
+@media (max-width:600px){
+  .container{padding:12px}
+  .form-row{grid-template-columns:1fr}
+  .login-card{width:100%;padding:8px}
+}

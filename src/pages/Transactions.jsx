@@ -5,7 +5,7 @@ export default function Transactions(){
   const { transactions, removeTransaction } = useFinance();
   return (
     <div className="container">
-      <h2>Transações</h2>
+      <h2>Transações 🔃</h2>
       <div style={{marginTop:12}}>
         {transactions.length===0 && <div className="card">Nenhuma transação</div>}
         {transactions.map(tx=> (

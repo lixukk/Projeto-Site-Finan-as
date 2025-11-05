@@ -15,7 +15,7 @@ export default function Accounts(){
 
   return (
     <div className="container">
-      <h2>Contas</h2>
+      <h2>Contas 🧾</h2>
       <form onSubmit={onAdd} className="card" style={{display:'grid',gap:8,marginBottom:12}}>
         <div>
           <label>Nome da conta:</label><br/>
