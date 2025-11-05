@@ -4,12 +4,19 @@ Uma aplicação para ajudar usuários a controlar seus gastos e receitas de form
 simples e visual.
 
 • Título do Projeto: Minhas Finanças: Controle Financeiro Pessoal
+
+• Grupo:  Bruno da Silva Bezerra
+          Rafael Ribeiro Carvalho
+          Artur Gonçalves Dias Mendonça
+          Matheus Rey Rodriguez
+          Icaro Ouriques Luna
+          
 • Escopo do Projeto:
 
 o Descrição: O sistema será uma aplicação web para que os usuários
 possam registrar e categorizar suas despesas e receitas diárias. A
 plataforma permitirá a criação de orçamentos mensais por categoria (ex:
-R$ 500 para alimentação) e exibirá relatórios e gráficos intuitivos que
+R$ 500 para alimentação) e exibirá relatórios intuitivos que
 ajudam o usuário a visualizar para onde seu dinheiro está indo. O
 objetivo principal é fornecer uma ferramenta clara e objetiva para o
 planejamento financeiro pessoal, auxiliando na tomada de decisões e na
@@ -25,9 +32,6 @@ Corrente").
 ▪ Transação: Um registro de uma receita ou despesa, com valor,
 data e categoria.
 
-▪ Categoria: Classificação da transação (ex: "Moradia",
-"Transporte", "Salário").
-
 ▪ Orçamento: Um limite de gasto mensal definido pelo usuário para
 uma determinada categoria.
 
@@ -38,31 +42,10 @@ o Funcionalidades:
 • Dashboard principal com um resumo do mês: total de
 receitas, despesas e saldo atual.
 
-• Gráficos visuais (ex: gráfico de pizza para despesas por
-categoria).
-
 • Formulário rápido para adicionar novas transações.
 
 • Tela para visualizar o histórico de transações com filtros
 por data ou categoria.
 
-• Página para criar e acompanhar o progresso dos
-orçamentos mensais.
-
-▪ Backend:
-
-• API RESTful segura para CRUD de contas, transações,
-categorias e orçamentos.
-
-• Autenticação de usuário para garantir a privacidade dos
-dados.
-
-• Endpoints específicos para calcular e fornecer os dados
-agregados para os gráficos do dashboard.
-
-• Validação de dados no servidor (ex: valores devem ser
-numéricos).
-
 o Público-Alvo: Qualquer pessoa que deseje ter um controle maior sobre
-suas finanças pessoais, especialmente estudantes e jovens
-profissionais.
+suas finanças pessoais, especialmente estudantes e jovens profissionais.
