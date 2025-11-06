@@ -1,9 +1,0 @@
-:root{
-  --bg: #f7f7f7;
-  --card: #ffffff;
-  --text: #222;
-}
-body{font-family: Arial, Helvetica, sans-serif; background:var(--bg); color:var(--text); margin:0}
-.container{max-width:980px;margin:24px auto;padding:12px}
-.header{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
-.card{background:var(--card);padding:12px;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
