@@ -18,7 +18,7 @@ export function FinanceProvider({ children }) {
   function addTransaction({ type = 'expense', amount = 0, date = new Date().toISOString(), category = 'Geral', accountId = accounts[0]?.id || 'wallet', note = '' }) {
     const t = { id: uuidv4(), type, amount: Number(amount), date, category, accountId, note };
     setTransactions(p => [t, ...p]);
-    // Ajustar saldo da conta
+    // adjust account balance simple
     setAccounts(p => p.map(a => a.id === accountId ? { ...a, balance: a.balance + (type === 'income' ? Number(amount) : -Number(amount)) } : a));
     return t;
   }
