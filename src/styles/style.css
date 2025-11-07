@@ -41,6 +41,3 @@ label{font-size:13px;color:var(--muted)}
   .form-row{grid-template-columns:1fr}
   .login-card{width:100%;padding:8px}
 }
-
-.light-header { background: #fff; color: #000; }
-.dark-header { background: #222; color: #fff; }
