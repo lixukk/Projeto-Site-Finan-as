@@ -14,7 +14,7 @@ export default function Header(){
         {user ? (
           <span>Olá, {user.name || user.cpf}! <button onClick={() => logout()}>Sair</button></span>
         ) : (
-          <Link to="/login">Entrar 🔑</Link>
+          <Link to="/login">Entrar🔑</Link>
         )}
       </div>
     </header>
